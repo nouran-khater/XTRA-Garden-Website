@@ -1,0 +1,419 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+/*<<<<< Header >>>>>*/
+/* Nav1 */
+section.header{
+    position: relative;
+}
+section.header div.firstNav{
+   /* padding: 50px 20px; */
+    padding: 40px 0 80px;
+   background-color: #252220;
+   border-top: 5px solid #439A0D;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap :30%;
+}
+section.header div.firstNav div.logo{
+    width: 250px ;
+    padding-left: 5%;
+}
+section.header div.firstNav div.logo img{
+    width: 100%;
+}
+section.header div.firstNav div.contactInfo {
+    display: flex;       
+    justify-content: flex-end;
+    gap:50px;
+    margin-right: 5%;
+}
+section.header div.firstNav div.contactInfo div.contactInfo_container{
+    display: flex;
+    align-items: center;     
+    gap: 15px;  
+}
+section.header div.firstNav div.contactInfo div.contactInfo_img{
+    width: 30px;
+    background: linear-gradient(to right, #1A6830, #439A0D);
+    color: #FFFFFF;
+    padding: 18px;
+    border-radius: 10px;
+    transition: scale 0.3s ease-in-out 0.0001s;
+}
+section.header div.firstNav div.contactInfo div.contactInfo_img:hover{
+    scale: 1.1;
+}
+section.header div.firstNav div.contactInfo span.first{
+    color: #A3A3A3;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 1px;
+}
+section.header div.firstNav div.contactInfo span.second{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* Nav2 */
+section.header div.secondNav{
+    /* background-color:#FFFFFF;
+    padding: 1px;
+    margin: 0 60px;
+    color: #3A3836;
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+  bottom: -30px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%; */
+  position: absolute;
+  bottom: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+section.header div.secondNav div.menu ul.main-list{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+section.header div.secondNav div.menu ul.main-list > li a{
+    text-decoration: none;
+    color: #3A3836;
+}
+section.header div.secondNav div.menu ul.main-list > li {
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+section.header div.secondNav div.menu ul.main-list > li:hover{
+    background: linear-gradient(to right, #1A682F, #439A0D);
+    color: #FFFFFF;
+}
+section.header div.secondNav div.menu ul.main-list > li:active{
+    background: linear-gradient(to right, #1A682F, #439A0D);
+    color: #FFFFFF;
+}
+section.header div.secondNav div.menu ul.main-list > li:hover > a{
+    color: white;
+}
+section.header div.secondNav div.menu li.has-dropdown{
+   position: relative;
+}
+section.header div.secondNav div.menu ul.dropdown{
+    list-style: none;
+    background-color:white;
+    padding: 10px 5px;
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    min-width: 150px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+section.header div.secondNav div.menu ul.dropdown li{
+   font-weight: normal;
+   padding: 8px 10px;
+}
+section.header div.secondNav div.menu ul.dropdown li a{
+    transition: all 0.2s ease-in-out 0s;
+}
+section.header div.secondNav div.menu ul.dropdown li a:hover{
+    color:#439A0D ;
+    display: block;
+    transform: translateX(8px);
+}
+section.header div.secondNav div.menu ul.dropdown::before{
+    content: "";
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid black;
+    border-right: 6px solid transparent;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top:-6px;
+    width: 0px;
+    height: 0px;
+}
+section.header div.secondNav div.menu li.has-dropdown:hover ul.dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+div.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 2%;
+}
+
+div.socialMedia svg {
+  color: #3A3836; 
+  width: 22px;
+  background-color: #F6F9F7;
+  padding: 10px;
+  border-radius: 6px;
+}
+div.fb svg , div.ig svg, div.x svg, div.skype svg{
+  transition: all 0.2s ease-in-out 0.01s;
+}
+div.socialMedia div.fb svg:hover{
+    background-color: #3B5998;
+    color: #FFFFFF;
+}
+div.socialMedia div.x svg:hover{
+    background-color: #000;
+    color: #FFFFFF;
+}
+div.socialMedia div.skype svg:hover{
+    background-color: #00AFF0;
+    color: #FFFFFF;
+}
+div.socialMedia div.ig svg:hover{
+    background:linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: #FFFFFF;
+}
+button{
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    background: linear-gradient(to right, #1A682F, #439A0D);
+    color: #FFFFFF;
+    font-size: 16px;
+    border: transparent;
+    transition: scale 0.2s ease-in-out 0.0001s;
+}
+button:hover{
+    scale: 1.05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.introduction{
+    height: 800px;
+    width: 100%;
+    background-image: url(images/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    margin-top: 0px;
+}
+section.introduction img:first-of-type{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+section.introduction div.topic{
+    /* width: 400px; */
+    display: inline-block;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+section.introduction div.topic div.mid-topic{
+    background-color: #FFFFFF;
+    color: #196730;
+    position: relative;
+    padding: 2px 60px;
+    font-size: 24px;
+    border-radius: 25px;
+}
+section.introduction div.topic div.top-topic{
+    position:absolute;
+    top: -65px;
+    left: 40px;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #1A682F, #439A0D);
+    z-index: -1;
+    border-radius: 15px;
+    padding: 0px 25px 5px;
+    font-size: 20px;
+}
+section.introduction div.topic div.bottom-topic{
+    position:absolute;
+    bottom: -80px;
+    right: 45px;
+    background-color: #252220;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 0px 25px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+section.services{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* height: 800px; */
+    align-items: stretch;
+    
+}
+section.services > div {
+    flex: 1; 
+    /* width: 25%; */
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 30px;
+    height: 400px;
+    padding: 30px;
+
+}
+section.services > div img{
+    transition: transform 0.8s ease;
+}
+section.services > div:hover img{
+   transform: rotateY(360deg);
+}
+section.services div.service1{
+    background: linear-gradient(to right, #1A682F, #439A0D);
+    text-align: left;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;  */
+    color: white;
+    
+}
+section.services div.service2 h3 , div.service3 h3, div.service4 h3{
+    font-size: 24px;
+    color: #196730;
+}
+section.services div.service2 p , div.service3 p, div.service4 p{
+    color:#666666;
+    padding: 15px 0px;
+    line-height: 35px;
+}
+section.services div.service2 a , div.service3 a, div.service4 a{
+    text-decoration: none;
+    background: linear-gradient(to right, #1A682F, #439A0D);
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out 0.05s;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+section.services a:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 3px 15px #439A0D;
+}
+/* section.services > img:first-of-type{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+    bottom: 0px;
+    z-index: 100;
+} */
+
+
+
+
+
+
+
+section.contact{
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+}
+section.contact img.contact-top{
+    position: absolute;
+    width: 100%;
+    transform: rotate(180deg);
+    top: 0px;
+}
+section.contact img.contact-bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+section.contact > div{
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    padding: 50px;
+    width: 35%;
+    border-radius: 10px;
+}
+section.contact > div > span:first-of-type{
+    color:#AAAAAA;
+    font-size: 18px;
+}
+section.contact > div > h2:first-of-type{
+    font-size: 34px;
+}
+section.contact > div > h2:first-of-type span{
+    color: #439A0D;
+}
+section.contact > div > p{
+    font-size: 20px;
+    color: #666666;
+}
+section.contact > div div.contact-links{
+    display: flex;
+    gap: 10%;
+    margin-top: 8%;
+}
+section.contact > div div.contact-links a{
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+}
+section.contact > div div.contact-links a.contactUs{
+    background: linear-gradient(to right, #1A682F, #439A0D);;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out 0.05s;
+}
+section.contact > div div.contact-links a.contactUs:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 3px 15px #439A0D;
+}
+section.contact > div div.contact-links a.learnMore{
+   color: #196730;
+   font-weight: bold;
+   transition: all 0.2s ease-in-out 0.05s;
+   border-radius: 8px;
+   display: inline-block;
+}
+section.contact > div div.contact-links a.learnMore:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 3px 10px #439A0D;
+}
